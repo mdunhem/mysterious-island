@@ -22,7 +22,7 @@
     scale 1.0/0.15
 }
 
-// Layered texture. First layer is rock, second is grass
+// Layered texture. First layer is sand, second is grass
 #local MountainTextureBase =
     texture {
         pigment { SandPigment }
