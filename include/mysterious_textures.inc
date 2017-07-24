@@ -35,7 +35,7 @@
         }
         finish  {
             ambient 0.15
-            diffuse 0.8
+            diffuse 1.5
         }
     }
     texture {
