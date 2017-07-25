@@ -41,25 +41,6 @@
     }
 }
 
-#local MonsterPoint01 = <1.50, 4.00, 0>;
-#local MonsterPoint02 = <-0.90, 2.00, 0>;
-#local MonsterPoint03 = <0.20, 1.00, 0>;
-#local MonsterPoint04 = <-0.50, 1.00, 0>;
-#local MonsterPoint05 = <-0.50, 0.00, 0>;
-#local MonsterPoint06 = <0.50, 0.00, 0>;
-#local MonsterPoint07 = <0.50, 1.00, 0>;
-#local MonsterPoint08 = <1.00, 1.50, 0>;
-#local MonsterPoint09 = <1.60, 1.50, 0>;
-#local MonsterPoint10 = <1.50, 0.30, 0>;
-#local MonsterPoint11 = <2.40, 0.00, 0>;
-#local MonsterPoint12 = <2.70, 1.80, 0>;
-#local MonsterPoint13 = <3.70, 1.50, 0>;
-#local MonsterPoint14 = <3.00, 0.50, 0>;
-#local MonsterPoint15 = <4.00, 0.00, 0>;
-#local MonsterPoint16 = <4.50, 1.50, 0>;
-#local MonsterPoint17 = <4.20, 3.50, 0>;
-#local MonsterPoint18 = <6.50, 2.50, 0>;
-
 #local MonsterEye = union {
     // Sclera (white part of eye)
     sphere {
@@ -93,24 +74,24 @@
     sphere_sweep {
         b_spline
         18,
-        MonsterPoint01, 0.01,
-        MonsterPoint02, 0.07,
-        MonsterPoint03, 0.25,
-        MonsterPoint04, 0.30,
-        MonsterPoint05, 0.15,
-        MonsterPoint06, 0.45,
-        MonsterPoint07, 0.15,
-        MonsterPoint08, 0.20,
-        MonsterPoint09, 0.35,
-        MonsterPoint10, 0.30,
-        MonsterPoint11, 0.20,
-        MonsterPoint12, 0.40,
-        MonsterPoint13, 0.15,
-        MonsterPoint14, 0.30,
-        MonsterPoint15, 0.20,
-        MonsterPoint16, 0.30,
-        MonsterPoint17, 0.50,
-        MonsterPoint18, 0.50
+        <1.50, 4.00, 0>, 0.01,
+        <-0.90, 2.00, 0>, 0.07,
+        <0.20, 1.00, 0>, 0.25,
+        <-0.50, 1.00, 0>, 0.30,
+        <-0.50, 0.00, 0>, 0.15,
+        <0.50, 0.00, 0>, 0.45,
+        <0.50, 1.00, 0>, 0.15,
+        <1.00, 1.50, 0>, 0.20,
+        <1.60, 1.50, 0>, 0.35,
+        <1.50, 0.30, 0>, 0.30,
+        <2.40, 0.00, 0>, 0.20,
+        <2.70, 1.80, 0>, 0.40,
+        <3.70, 1.50, 0>, 0.15,
+        <3.00, 0.50, 0>, 0.30,
+        <4.00, 0.00, 0>, 0.20,
+        <4.50, 1.50, 0>, 0.30,
+        <4.20, 3.50, 0>, 0.50,
+        <6.50, 2.50, 0>, 0.50
         tolerance 0.1
         texture { MonsterBodyTexture }
     }
