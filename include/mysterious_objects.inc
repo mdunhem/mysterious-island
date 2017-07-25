@@ -44,7 +44,7 @@
 #local MonsterEye = union {
     // Sclera (white part of eye)
     sphere {
-        <0, 0, 0>, 0.10
+        <0, 0, 0>, 0.15
         scale <1, 1, 0.3>
         texture {
             pigment { White }
@@ -53,7 +53,7 @@
     }
     // Pupil
     sphere {
-        <0, 0, 0>, 0.05
+        <0, 0, 0>, 0.08
         texture {
             pigment { Black }
             finish { phong 0.1 }
@@ -62,18 +62,22 @@
     }
 }
 
-#local MonsterMouth = sphere {
-    <0, 0, 0>, 0.50
-    scale <1, 0.2, 2>
-    rotate <0, 0, -30>
-    translate <5, 2.85, 0>
+#local MonsterMouth = prism {
+    0.00, 2.00, 4
+    <1.00, 2.00>,
+    <0.00, 0.00>,
+    <-1.00, 2.00>,
+    <1.00, 2.00>
     pigment { MonsterMouthColor }
+    rotate y * 90
+    rotate x * 90
+    translate <4.8, 3, -1>
 }
 
 #local MonsterBody = object {
     sphere_sweep {
         b_spline
-        18,
+        19,
         <1.50, 4.00, 0>, 0.01,
         <-0.90, 2.00, 0>, 0.07,
         <0.20, 1.00, 0>, 0.25,
@@ -90,8 +94,9 @@
         <3.00, 0.50, 0>, 0.30,
         <4.00, 0.00, 0>, 0.20,
         <4.50, 1.50, 0>, 0.30,
-        <4.20, 3.50, 0>, 0.50,
-        <6.50, 2.50, 0>, 0.50
+        <4.20, 3.00, 0>, 0.60,
+        <5.50, 3.20, 0>, 0.80,
+        <6.50, 3.50, 0>, 0.90
         tolerance 0.1
         texture { MonsterBodyTexture }
     }
@@ -117,11 +122,11 @@
     }
     object {
         MonsterEye
-        translate <4.5, 3.10, -0.43>
+        translate <4.8, 3.50, -0.65>
     }
     object {
         MonsterEye
-        translate <4.5, 3.10, -0.43>
+        translate <4.8, 3.50, -0.65>
         scale <1, 1, -1>
     }
 }

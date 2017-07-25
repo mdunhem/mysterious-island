@@ -106,6 +106,10 @@
 }
 
 #declare MonsterBodyTexture = texture {
-    pigment { MonsterScalyPigment }
-    finish { diffuse 0.9 phong 1 }
+   pigment { MonsterScalyPigment }
+   normal { quilted 0.5 }
+   finish { phong 0.7 }
+   translate 0.5
+   scale 0.2
+   rotate 45 * x
 }

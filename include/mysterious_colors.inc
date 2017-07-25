@@ -16,7 +16,6 @@
 #local G2 = GrassDensity * <0.29, 0.48, 0.13>;
 #local G3 = GrassDensity * <0.45, 0.63, 0.1>;
 #local G4 = GrassDensity * <0.4, 0.5, 0.2>;
-#local MonsterBodyBaseColor = color rgb <0.7, 1, 0.15>;
 
 // ----------- Exports ---------------------
 
@@ -27,7 +26,7 @@
 #declare MossyDarkGreenGrass = color rgb GrassDensity * <0.2, 0.2, 0.1>;
 #declare FlameRedColor = color rgb <0.35, 0, 0>;
 #declare FlameOrangeColor = color rgb <0.75, 0.25, 0>;
-#declare MonsterMouthColor = color rgb <1, 0.7, 0.15>;
+#declare MonsterMouthColor = color rgb <1, 0.15, 0.15>;
 
 #declare RockColorMap = color_map {
     [ 0.019 color 0.721 * RockFloat + <0, 0, 0> ]
@@ -92,12 +91,4 @@
     warp { turbulence 0.1 }
 }
 
-#declare MonsterScalyPigment = pigment {
-    wrinkles
-    pigment_map {
-        [ 0.0 MonsterBodyBaseColor * 1 ]
-        [ 0.3 MonsterBodyBaseColor * 0.6 ]
-        [ 0.6 MonsterBodyBaseColor * 0.8 ]
-        [ 1.0 MonsterBodyBaseColor * 1 ]
-    }
-}
+#declare MonsterScalyPigment = pigment { checker color <0.0, 0.6, 0.3> color <0.0, 0.4, 0.1> }
