@@ -17,6 +17,7 @@ global_settings { assumed_gamma 1.0 }
 // Local definitions
 #include "include/mysterious_environment.inc"
 #include "include/mysterious_colors.inc"
+#include "include/mysterious_objects.inc"
 
 //--------------------------------------------------------------------------
 // Camera
@@ -53,7 +54,15 @@ object { Clouds }
 /**
  * Foreground island
  */
-object { Island }
+union {
+    object { Island }
+    object {
+        Fire
+        translate <13.5, 1, -10.5>
+        scale 0.4
+    }
+}
+
 
 /**
  * Background island

@@ -6,8 +6,6 @@
 
 #include "include/mysterious_colors.inc"
 
-#local Transparent = rgbt 1;
-
 #local MountainSlope = normal {
     gradient x
     slope_map {
