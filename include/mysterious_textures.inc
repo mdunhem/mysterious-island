@@ -104,3 +104,8 @@
         lambda 3
     }
 }
+
+#declare MonsterBodyTexture = texture {
+    pigment { MonsterScalyPigment }
+    finish { diffuse 0.9 phong 1 }
+}

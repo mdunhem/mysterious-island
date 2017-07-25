@@ -78,3 +78,33 @@ object {
  * Ocean
  */
 object { Ocean }
+
+//--------------------------------------------------------------------------
+// Monsters
+//--------------------------------------------------------------------------
+
+/**
+ * Foreground monsters
+ */
+object {
+    Monster
+    scale 0.3
+    rotate y * 20
+    translate <0, -0.35, -10>
+}
+object {
+    Monster
+    scale 0.3
+    rotate y * 170
+    translate <4, -0.6, -10>
+}
+
+/**
+ * Background monster
+ */
+object {
+    Monster
+    scale 0.3
+    rotate y * 70
+    translate <11, -0.35, 3>
+}
