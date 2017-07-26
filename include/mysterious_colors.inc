@@ -92,3 +92,7 @@
 }
 
 #declare MonsterScalyPigment = pigment { checker color <0.0, 0.6, 0.3> color <0.0, 0.4, 0.1> }
+
+#declare OrbPigment = pigment {
+    LightGray filter 0.95
+}

@@ -144,3 +144,21 @@
     object { CaveRoof }
     texture { CaveTexture }
 }
+
+#declare Orb = sphere {
+    <0, 0, 0>, 0.35
+    pigment { OrbPigment }
+    interior {
+        ior 1.45
+        fade_distance 2
+        fade_power 2
+        caustics 2.0
+    }
+    finish {
+        ambient 0.2
+        diffuse 0.0
+        reflection 0.12
+        specular 1.0
+        roughness 0.001
+    }
+}

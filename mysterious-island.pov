@@ -69,6 +69,10 @@ union {
         translate <13.5, 1, -10.5>
         scale 0.4
     }
+    object {
+        Orb
+        translate <-2.0, 1.75, -5.0>
+    }
 }
 
 
