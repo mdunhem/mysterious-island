@@ -55,7 +55,15 @@ object { Clouds }
  * Foreground island
  */
 union {
-    object { Island }
+    difference {
+        object { Island }
+        object {
+            Cave
+            scale 0.2
+            rotate <0, -30, 0>
+            translate <2, 1.5, -4.3>
+        }
+    }
     object {
         Fire
         translate <13.5, 1, -10.5>

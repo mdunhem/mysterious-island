@@ -102,6 +102,14 @@
     }
 }
 
+#local CaveBase = box {
+    <-1, 0, -2>, <1, 2, 2>
+}
+
+#local CaveRoof = cylinder {
+    <0, 2, -2>, <0, 2, 2>, 1
+}
+
 // ----------- Exports ---------------------
 
 #declare Fire = object {
@@ -129,4 +137,10 @@
         translate <4.8, 3.50, -0.65>
         scale <1, 1, -1>
     }
+}
+
+#declare Cave = union {
+    object { CaveBase }
+    object { CaveRoof }
+    texture { CaveTexture }
 }

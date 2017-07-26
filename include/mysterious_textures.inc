@@ -113,3 +113,7 @@
    scale 0.2
    rotate 45 * x
 }
+
+#declare CaveTexture = texture {
+    pigment { RockPigment }
+}

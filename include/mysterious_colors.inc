@@ -7,7 +7,7 @@
 #include "colors.inc"
 
 #local RockFloat = <0.72, 0.56, 0.3>;
-#local RockDensity = 1.5;
+#local RockDensity = 2.5;
 #local LightSandColor = color rgb <0.97, 0.88, 0.62>;
 #local SandColor = color rgb <0.75, 0.55, 0.35>;
 #local GrassDensity = 1.0;
