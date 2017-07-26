@@ -38,6 +38,19 @@ camera {
 light_source { <30, 200, -150>, 1 }
 
 /**
+ * Orb Spotlight
+ */
+light_source {
+    <-3, 3, -9>
+    White
+    spotlight
+    point_at <-2, 1.75, -5.0>
+    radius 4
+    tightness 10
+    falloff 10
+}
+
+/**
  * Blue sky
  */
 sky_sphere { pigment { SkyColor } }
